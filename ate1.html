@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  .container-pai {
+    display: flex;
+    flex-wrap: wrap; /* permite que os elementos "quebrem" para a linha de baixo caso não haja espaço suficiente na linha atual */
+  }
+  
+  .container-carrossel {
+    width: 70%; /* ajuste o tamanho conforme necessário */
+  }
+  
+  .container-card {
+    width: 30%; /* ajuste o tamanho conforme necessário */
+  }
+</style>
+<body>
+  
+  <div class="container-pai">
+    <div class="container-carrossel">
+      tesdte
+    </div>
+    <div class="container-card">
+      <!tet
+    </div>
+  </div>
+   <!--Inicio do card De pesquisa -->
+   <div class="card" align="center" >
+    <div class="card-header" >
+          
+        <button  class="btn btn-primary btn-sm btn-round" title="Cliqsue aqui para importar Alternativas para esta questão" onclick="javascript:PopUp2('<%=sEnderecoJSP%>Questao.jsp?Opcao=Importar',0,0,false,'Importar Alternativa');"> Importar alternativas</button>
+
+        <button class="btn btn-primary btn-sm btn-round" title= "Clique aqui para cadastrar Alternativas para esta questão"  onclick="javascript:PopUp2('<%=sEnderecoJSP%>Questao.jsp?Opcao=Cadastrar',0,0,false,'Cadastar questão');"> Cadastar Questão  </button>
+  <hr size="-3"/>
+    </div>        
+    <div class="card-body"> 
+    <h5 class="card-title"></h5> 
+    <p class="card-text"></p>
+<!--<a><input type="text"> </a> <a class="btn btn-primary btn-sm btn-round">Pesquisar</a> -->
+  </div>
+    </div>
+
+</body>
+</html>
